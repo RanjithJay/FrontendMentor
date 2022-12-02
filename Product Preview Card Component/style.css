@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+body{
+    max-width: 1440px;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+
+.container{
+    background-color: #ffffff;
+    display: flex;   
+    border-radius: 15px;
+    position: relative;
+    top: 20%;
+    left: 30%;
+    width: 40vw;
+    height: 60vh;
+}
+
+.image1{
+    width: 50%;
+    height: 100%;
+}
+
+.image1 img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.text{
+    width: 50%;
+    padding:45px; 
+    height: 100%;   
+}
+
+.perfume{
+    font-family: Montserrat;
+    opacity: 50%;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+h1{
+    font-family: 'Fraunces';
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.description{
+    font-family: 'Montserrat';
+    opacity: 40%;
+    font-size: 15px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.dollervalue{
+    font-family: 'Fraunces';
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    padding-right:10px;
+    margin-bottom: 20px;
+}
+
+strike{
+    font-size: 20px;
+    font-weight: 100;
+    color: #000000;
+    opacity: 40%;
+    padding-left: 10px;
+}
+
+.cartBtn{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    margin-top: 40px;
+    height: 60px;
+    width: 30vh;
+    background-color:hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+}
+
+.cartBtn::before{
+    content: url(./images/icon-cart.svg);
+    padding-right: 10px;
+}
+.image2{
+    display: none;
+}
+
+.image2{
+    width: 100%;
+    height: 100%;
+}
+
+.image2 img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+
+
+
+@media only screen and (max-width: 357px){
+    .image1{
+        display: none;
+    }
+    .image2{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .image2 img {
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .container{
+        background-color: #ffffff;
+        display: flex;   
+        border-radius: 15px;
+        flex-direction: column;
+        position: relative;
+        top: 5%;
+        left: 5%;
+        width: 90vw;
+        height: 90vh;
+    }
+    .text{
+        width: 100%;
+        padding:30px; 
+        height: 100%;   
+    }
+
+    h1{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    
+}
